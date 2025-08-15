@@ -1,117 +1,121 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Akshaya Bokka - Portfolio</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f6fa;
-    background-image: linear-gradient(135deg, #e2ebf3, #f3f6fa);
-    color: #2c3e50;
-  }
-  header {
-    background-color: #3b82f6;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  header h1 {
-    margin: 0;
-  }
-  nav {
-    background-color: #2563eb;
-    padding: 10px;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  section {
-    max-width: 900px;
-    margin: auto;
-    background-color: #ffffff;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-  h2 {
-    color: #2563eb;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  ul li {
-    padding: 5px 0;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya Bokka - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2E4053;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1F618D;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+        .contact-info table {
+            width: 100%;
+        }
+        .contact-info td {
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-<header>
-  <h1>Akshaya Bokka</h1>
-  <p>Computer Science & Engineering | Web Developer | Data Enthusiast</p>
-</header>
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#contact">Contact</a>
-</nav>
-<section id="about">
-  <h2>About Me</h2>
-  <p id="about-text"></p>
-</section>
-<section id="skills">
-  <h2>Skills</h2>
-  <ul id="skills-list"></ul>
-</section>
-<section id="projects">
-  <h2>Projects</h2>
-  <ul id="projects-list"></ul>
-</section>
-<section id="education">
-  <h2>Education</h2>
-  <ul id="education-list"></ul>
-</section>
-<section id="experience">
-  <h2>Experience</h2>
-  <ul id="experience-list"></ul>
-</section>
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:akshayareddy200516@gmail.com">akshayareddy200516@gmail.com</a></p>
-  <p>Phone: 9381838396</p>
-  <p>Location: Hyderabad, Telangana</p>
-</section>
-<script>
-  const aboutText = "Passionate Computer Science & Engineering student dedicated to leveraging technology to solve real-world problems. Always eager to learn new tools, frameworks, and technologies to stay at the forefront of innovation.";
+    <header>
+        <h1>Akshaya Bokka</h1>
+        <p>Computer Science & Engineering Student | Web Developer | Data Enthusiast</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Passionate Computer Science & Engineering student dedicated to leveraging technology to solve real-world problems. Always eager to learn new tools, frameworks, and technologies to stay at the forefront of innovation.</p>
+        </section>
 
-  const skills = [
-    "C", "Python", "Java", "HTML", "CSS", "JavaScript", "MongoDB", "SQL", "Jupyter Notebook", "Power BI", "MS Office", "Machine Learning", "Cybersecurity"
-  ];
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, Python, Java</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Databases:</strong> MongoDB, SQL</li>
+                <li><strong>Tools:</strong> Jupyter Notebook, Power BI, MS Office</li>
+                <li><strong>Specializations:</strong> Machine Learning, Cybersecurity</li>
+            </ul>
+        </section>
 
-  const projects = [
-    { name: "Web Scraping Scripts", tech: "Python, BeautifulSoup, Scrapy", desc: "Developed scripts to extract and analyze data from websites for research and analytics."},
-    { name: "Sales Performance Dashboard", tech: "Power BI", desc: "Interactive dashboard visualizing sales, revenue, and customer demographics."},
-    { name: "Full Stack Web Development", tech: "HTML, CSS, JavaScript, SQL, MongoDB", desc: "Built and maintained web applications integrating front-end and back-end."}
-  ];
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Web Scraping Scripts</strong> (Python, BeautifulSoup, Scrapy) - Developed scripts to extract and analyze data from multiple websites for research and analytics.</li>
+                <li><strong>Sales Performance Dashboard</strong> (Power BI) - Designed an interactive dashboard to visualize sales, revenue, and customer demographics for an e-commerce company.</li>
+                <li><strong>Full Stack Web Development</strong> (HTML, CSS, JavaScript, SQL, MongoDB) - Built and maintained end-to-end web applications integrating front-end and back-end systems.</li>
+            </ul>
+        </section>
 
-  const education = [
-    "B.Tech (CSE) – Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7",
-    "Intermediate (MPC) – Narayana Junior College (2020–2022), Percentage: 92%",
-    "SSC – St Peter’s High School (2020), CGPA: 10"
-  ]
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech (CSE):</strong> Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7</li>
+                <li><strong>Intermediate (MPC):</strong> Narayana Junior College (2020–2022), Percentage: 92%</li>
+                <li><strong>SSC:</strong> St Peter’s High School (2020), CGPA: 10</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <p><strong>Cybersecurity Virtual Internship</strong> – April 2024 to June 2024</p>
+            <p>Learned cybersecurity fundamentals: encryption, access control, and cloud security best practices. Gained exposure to tools like firewalls and threat detection systems.</p>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Guvi – Python Zero to Hero</li>
+                <li>Cisco – Python Essentials</li>
+                <li>Oracle – Java Programming</li>
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <table>
+                <tr><td><strong>Email:</strong></td><td>akshayareddy200516@gmail.com</td></tr>
+                <tr><td><strong>Phone:</strong></td><td>9381838396</td></tr>
+                <tr><td><strong>Location:</strong></td><td>Hyderabad, Telangana</td></tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
