@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya Bokka - Portfolio</title>
+    <style>
+        :root{
+            --bg:#0f172a;        /* slate-900 */
+            --card:#111827;      /* gray-900 */
+            --ink:#e5e7eb;       /* gray-200 */
+            --accent:#60a5fa;    /* blue-400 */
+            --muted:#9ca3af;     /* gray-400 */
+        }
+        *{box-sizing:border-box}
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,.15), transparent),
+                        radial-gradient(1000px 500px at 110% -20%, rgba(59,130,246,.2), transparent),
+                        var(--bg);
+            color: var(--ink);
+        }
+        .wrap{
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+        }
+        header {
+            padding: 28px 22px;
+            background: linear-gradient(180deg, rgba(17,24,39,.8), rgba(17,24,39,.5));
+            border: 1px solid rgba(255,255,255,.06);
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.35);
+            backdrop-filter: blur(6px);
+        }
+        header h1 {
+            margin: 0 0 6px;
+            font-size: 34px;
+            letter-spacing: .3px;
+        }
+        header p{margin:0;color:var(--muted)}
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 18px;
+            margin-top: 18px;
+        }
+        section{
+            background: rgba(17,24,39,.7);
+            border: 1px solid rgba(255,255,255,.06);
+            border-radius: 16px;
+            padding: 18px 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.35);
+        }
+        section h2{
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: var(--accent);
+            letter-spacing:.2px;
+        }
+        ul{margin:0;padding-left:18px}
+        li{margin:6px 0}
+        .pill{
+            display:inline-block;
+            padding:6px 10px;
+            margin:4px 6px 0 0;
+            background: rgba(96,165,250,.12);
+            color: var(--ink);
+            border:1px solid rgba(96,165,250,.3);
+            border-radius:999px;
+            font-size:12px;
+        }
+        .two{grid-column: span 12}
+        .six{grid-column: span 12}
+        @media(min-width: 860px){
+            .two{grid-column: span 4}
+            .six{grid-column: span 8}
+        }
+        .meta{
+            display:grid;
+            grid-template-columns:120px 1fr;
+            gap:8px 14px;
+        }
+        .meta div{color:var(--muted)}
+        .contact table{width:100%}
+        .contact td{padding:6px 4px; vertical-align:top;}
+        a{color:var(--accent); text-decoration:none}
+        a:hover{text-decoration:underline}
+        .footer{margin-top:22px; text-align:center; color:var(--muted); font-size:12px}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Akshaya Bokka</h1>
+            <p>Computer Science & Engineering · Web Development · Data & Dashboards</p>
+        </header>
+
+        <div class="grid">
+            <section class="two">
+                <h2>About</h2>
+                <p>Passionate Computer Science & Engineering student dedicated to leveraging technology to solve real-world problems. Always eager to learn new tools, frameworks, and technologies to stay at the forefront of innovation.</p>
+            </section>
+
+            <section class="six">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Web Scraping Scripts</strong> — Python, BeautifulSoup, Scrapy<br>
+                        Developed scripts to extract and analyze data from multiple websites for research and analytics.</li>
+                    <li><strong>Sales Performance Dashboard</strong> — Power BI<br>
+                        Interactive dashboard visualizing sales, revenue, and customer demographics for an e‑commerce company.</li>
+                    <li><strong>Full Stack Web Development</strong> — HTML, CSS, JavaScript, SQL, MongoDB<br>
+                        Built and maintained end‑to‑end web apps integrating front‑end and back‑end systems.</li>
+                </ul>
+            </section>
+
+            <section class="two">
+                <h2>Skills</h2>
+                <div>
+                    <span class="pill">C</span>
+                    <span class="pill">Python</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">MongoDB</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">Jupyter Notebook</span>
+                    <span class="pill">Power BI</span>
+                    <span class="pill">MS Office</span>
+                    <span class="pill">Machine Learning</span>
+                    <span class="pill">Cybersecurity</span>
+                </div>
+            </section>
+
+            <section class="six">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>B.Tech (CSE)</strong> — Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7</li>
+                    <li><strong>Intermediate (MPC)</strong> — Narayana Junior College (2020–2022), Percentage: 92%</li>
+                    <li><strong>SSC</strong> — St Peter’s High School (2020), CGPA: 10</li>
+                </ul>
+            </section>
+
+            <section class="six">
+                <h2>Experience</h2>
+                <p><strong>Cybersecurity Virtual Internship</strong> — April 2024 to June 2024</p>
+                <ul>
+                    <li>Learned cybersecurity fundamentals: encryption, access control, and cloud security best practices.</li>
+                    <li>Exposure to tools like firewalls and threat detection systems.</li>
+                </ul>
+            </section>
+
+            <section class="two">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Guvi — Python Zero to Hero</li>
+                    <li>Cisco — Python Essentials</li>
+                    <li>Oracle — Java Programming</li>
+                </ul>
+            </section>
+
+            <section class="six contact">
+                <h2>Contact</h2>
+                <table>
+                    <tr><td><strong>Email</strong></td><td><a href="mailto:akshayareddy200516@gmail.com">akshayareddy200516@gmail.com</a></td></tr>
+                    <tr><td><strong>Phone</strong></td><td><a href="tel:+919381838396">+91 93818 38396</a></td></tr>
+                    <tr><td><strong>Location</strong></td><td>Hyderabad, Telangana</td></tr>
+                </table>
+            </section>
+        </div>
+
+        <div class="footer">© <span id="y"></span> Akshaya Bokka</div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
