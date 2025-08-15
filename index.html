@@ -1,180 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshaya Bokka - Portfolio</title>
-    <style>
-        :root{
-            --bg:#0f172a;        /* slate-900 */
-            --card:#111827;      /* gray-900 */
-            --ink:#e5e7eb;       /* gray-200 */
-            --accent:#60a5fa;    /* blue-400 */
-            --muted:#9ca3af;     /* gray-400 */
-        }
-        *{box-sizing:border-box}
-        body {
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background: radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,.15), transparent),
-                        radial-gradient(1000px 500px at 110% -20%, rgba(59,130,246,.2), transparent),
-                        var(--bg);
-            color: var(--ink);
-        }
-        .wrap{
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 32px 20px 60px;
-        }
-        header {
-            padding: 28px 22px;
-            background: linear-gradient(180deg, rgba(17,24,39,.8), rgba(17,24,39,.5));
-            border: 1px solid rgba(255,255,255,.06);
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.35);
-            backdrop-filter: blur(6px);
-        }
-        header h1 {
-            margin: 0 0 6px;
-            font-size: 34px;
-            letter-spacing: .3px;
-        }
-        header p{margin:0;color:var(--muted)}
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 18px;
-            margin-top: 18px;
-        }
-        section{
-            background: rgba(17,24,39,.7);
-            border: 1px solid rgba(255,255,255,.06);
-            border-radius: 16px;
-            padding: 18px 18px;
-            box-shadow: 0 8px 24px rgba(0,0,0,.35);
-        }
-        section h2{
-            margin: 0 0 10px;
-            font-size: 18px;
-            color: var(--accent);
-            letter-spacing:.2px;
-        }
-        ul{margin:0;padding-left:18px}
-        li{margin:6px 0}
-        .pill{
-            display:inline-block;
-            padding:6px 10px;
-            margin:4px 6px 0 0;
-            background: rgba(96,165,250,.12);
-            color: var(--ink);
-            border:1px solid rgba(96,165,250,.3);
-            border-radius:999px;
-            font-size:12px;
-        }
-        .two{grid-column: span 12}
-        .six{grid-column: span 12}
-        @media(min-width: 860px){
-            .two{grid-column: span 4}
-            .six{grid-column: span 8}
-        }
-        .meta{
-            display:grid;
-            grid-template-columns:120px 1fr;
-            gap:8px 14px;
-        }
-        .meta div{color:var(--muted)}
-        .contact table{width:100%}
-        .contact td{padding:6px 4px; vertical-align:top;}
-        a{color:var(--accent); text-decoration:none}
-        a:hover{text-decoration:underline}
-        .footer{margin-top:22px; text-align:center; color:var(--muted); font-size:12px}
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Akshaya Bokka - Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    background-image: linear-gradient(135deg, #f0f4f8, #e8ecf1);
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    background-color: #6fb1fc;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  h2 {
+    color: #4a90e2;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li {
+    padding: 5px 0;
+  }
+</style>
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <h1>Akshaya Bokka</h1>
-            <p>Computer Science & Engineering · Web Development · Data & Dashboards</p>
-        </header>
+<header>
+  <h1>Akshaya Bokka</h1>
+  <p>Computer Science & Engineering | Web Developer | Data Enthusiast</p>
+</header>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+<section id="about">
+  <h2>About Me</h2>
+  <p id="about-text"></p>
+</section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul id="skills-list"></ul>
+</section>
+<section id="projects">
+  <h2>Projects</h2>
+  <ul id="projects-list"></ul>
+</section>
+<section id="education">
+  <h2>Education</h2>
+  <ul id="education-list"></ul>
+</section>
+<section id="experience">
+  <h2>Experience</h2>
+  <ul id="experience-list"></ul>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:akshayareddy200516@gmail.com">akshayareddy200516@gmail.com</a></p>
+  <p>Phone: 9381838396</p>
+  <p>Location: Hyderabad, Telangana</p>
+</section>
+<script>
+  const aboutText = "Passionate Computer Science & Engineering student dedicated to leveraging technology to solve real-world problems. Always eager to learn new tools, frameworks, and technologies to stay at the forefront of innovation.";
 
-        <div class="grid">
-            <section class="two">
-                <h2>About</h2>
-                <p>Passionate Computer Science & Engineering student dedicated to leveraging technology to solve real-world problems. Always eager to learn new tools, frameworks, and technologies to stay at the forefront of innovation.</p>
-            </section>
+  const skills = [
+    "C", "Python", "Java", "HTML", "CSS", "JavaScript", "MongoDB", "SQL", "Jupyter Notebook", "Power BI", "MS Office", "Machine Learning", "Cybersecurity"
+  ];
 
-            <section class="six">
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong>Web Scraping Scripts</strong> — Python, BeautifulSoup, Scrapy<br>
-                        Developed scripts to extract and analyze data from multiple websites for research and analytics.</li>
-                    <li><strong>Sales Performance Dashboard</strong> — Power BI<br>
-                        Interactive dashboard visualizing sales, revenue, and customer demographics for an e‑commerce company.</li>
-                    <li><strong>Full Stack Web Development</strong> — HTML, CSS, JavaScript, SQL, MongoDB<br>
-                        Built and maintained end‑to‑end web apps integrating front‑end and back‑end systems.</li>
-                </ul>
-            </section>
+  const projects = [
+    { name: "Web Scraping Scripts", tech: "Python, BeautifulSoup, Scrapy", desc: "Developed scripts to extract and analyze data from websites for research and analytics."},
+    { name: "Sales Performance Dashboard", tech: "Power BI", desc: "Interactive dashboard visualizing sales, revenue, and customer demographics."},
+    { name: "Full Stack Web Development", tech: "HTML, CSS, JavaScript, SQL, MongoDB", desc: "Built and maintained web applications integrating front-end and back-end."}
+  ];
 
-            <section class="two">
-                <h2>Skills</h2>
-                <div>
-                    <span class="pill">C</span>
-                    <span class="pill">Python</span>
-                    <span class="pill">Java</span>
-                    <span class="pill">HTML</span>
-                    <span class="pill">CSS</span>
-                    <span class="pill">JavaScript</span>
-                    <span class="pill">MongoDB</span>
-                    <span class="pill">SQL</span>
-                    <span class="pill">Jupyter Notebook</span>
-                    <span class="pill">Power BI</span>
-                    <span class="pill">MS Office</span>
-                    <span class="pill">Machine Learning</span>
-                    <span class="pill">Cybersecurity</span>
-                </div>
-            </section>
+  const education = [
+    "B.Tech (CSE) – Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7",
+    "Intermediate (MPC) – Narayana Junior College (2020–2022), Percentage: 92%",
+    "SSC – St Peter’s High School (2020), CGPA: 10"
+  ];
 
-            <section class="six">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>B.Tech (CSE)</strong> — Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7</li>
-                    <li><strong>Intermediate (MPC)</strong> — Narayana Junior College (2020–2022), Percentage: 92%</li>
-                    <li><strong>SSC</strong> — St Peter’s High School (2020), CGPA: 10</li>
-                </ul>
-            </section>
+  const experience = [
+    "Cybersecurity Virtual Internship (Apr 2024 – Jun 2024): Learned cybersecurity fundamentals and gained exposure to firewalls and threat detection systems."
+  ];
 
-            <section class="six">
-                <h2>Experience</h2>
-                <p><strong>Cybersecurity Virtual Internship</strong> — April 2024 to June 2024</p>
-                <ul>
-                    <li>Learned cybersecurity fundamentals: encryption, access control, and cloud security best practices.</li>
-                    <li>Exposure to tools like firewalls and threat detection systems.</li>
-                </ul>
-            </section>
+  document.getElementById('about-text').textContent = aboutText;
 
-            <section class="two">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Guvi — Python Zero to Hero</li>
-                    <li>Cisco — Python Essentials</li>
-                    <li>Oracle — Java Programming</li>
-                </ul>
-            </section>
+  const skillsList = document.getElementById('skills-list');
+  skills.forEach(skill => {
+    let li = document.createElement('li');
+    li.textContent = skill;
+    skillsList.appendChild(li);
+  });
 
-            <section class="six contact">
-                <h2>Contact</h2>
-                <table>
-                    <tr><td><strong>Email</strong></td><td><a href="mailto:akshayareddy200516@gmail.com">akshayareddy200516@gmail.com</a></td></tr>
-                    <tr><td><strong>Phone</strong></td><td><a href="tel:+919381838396">+91 93818 38396</a></td></tr>
-                    <tr><td><strong>Location</strong></td><td>Hyderabad, Telangana</td></tr>
-                </table>
-            </section>
-        </div>
+  const projectsList = document.getElementById('projects-list');
+  projects.forEach(p => {
+    let li = document.createElement('li');
+    li.innerHTML = `<strong>${p.name}</strong> (${p.tech}) - ${p.desc}`;
+    projectsList.appendChild(li);
+  });
 
-        <div class="footer">© <span id="y"></span> Akshaya Bokka</div>
-    </div>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  const educationList = document.getElementById('education-list');
+  education.forEach(e => {
+    let li = document.createElement('li');
+    li.textContent = e;
+    educationList.appendChild(li);
+  });
+
+  const experienceList = document.getElementById('experience-list');
+  experience.forEach(exp => {
+    let li = document.createElement('li');
+    li.textContent = exp;
+    experienceList.appendChild(li);
+  });
+</script>
 </body>
 </html>
