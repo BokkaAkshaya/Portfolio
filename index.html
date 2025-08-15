@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -9,12 +10,12 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
-    background-image: linear-gradient(135deg, #f0f4f8, #e8ecf1);
-    color: #333;
+    background-color: #f3f6fa;
+    background-image: linear-gradient(135deg, #e2ebf3, #f3f6fa);
+    color: #2c3e50;
   }
   header {
-    background-color: #4a90e2;
+    background-color: #3b82f6;
     color: white;
     text-align: center;
     padding: 20px;
@@ -23,7 +24,7 @@
     margin: 0;
   }
   nav {
-    background-color: #6fb1fc;
+    background-color: #2563eb;
     padding: 10px;
     text-align: center;
   }
@@ -39,14 +40,14 @@
   section {
     max-width: 900px;
     margin: auto;
-    background-color: white;
+    background-color: #ffffff;
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   }
   h2 {
-    color: #4a90e2;
+    color: #2563eb;
   }
   ul {
     list-style-type: none;
@@ -113,41 +114,4 @@
     "B.Tech (CSE) – Geethanjali College of Engineering and Technology (2022–2026), CGPA: 8.7",
     "Intermediate (MPC) – Narayana Junior College (2020–2022), Percentage: 92%",
     "SSC – St Peter’s High School (2020), CGPA: 10"
-  ];
-
-  const experience = [
-    "Cybersecurity Virtual Internship (Apr 2024 – Jun 2024): Learned cybersecurity fundamentals and gained exposure to firewalls and threat detection systems."
-  ];
-
-  document.getElementById('about-text').textContent = aboutText;
-
-  const skillsList = document.getElementById('skills-list');
-  skills.forEach(skill => {
-    let li = document.createElement('li');
-    li.textContent = skill;
-    skillsList.appendChild(li);
-  });
-
-  const projectsList = document.getElementById('projects-list');
-  projects.forEach(p => {
-    let li = document.createElement('li');
-    li.innerHTML = `<strong>${p.name}</strong> (${p.tech}) - ${p.desc}`;
-    projectsList.appendChild(li);
-  });
-
-  const educationList = document.getElementById('education-list');
-  education.forEach(e => {
-    let li = document.createElement('li');
-    li.textContent = e;
-    educationList.appendChild(li);
-  });
-
-  const experienceList = document.getElementById('experience-list');
-  experience.forEach(exp => {
-    let li = document.createElement('li');
-    li.textContent = exp;
-    experienceList.appendChild(li);
-  });
-</script>
-</body>
-</html>
+  ]
